@@ -1,0 +1,112 @@
+body{
+    background-image: url("https://cdn.clickwallpapers.net/images/clickwallpapers-Arnold%20Schwarzenegger-img8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 75px  auto;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas: 
+"header"
+"contenido";
+}
+
+.header{
+    grid-area: header;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.contenido{
+    grid-area: contenido;
+}
+ /* --------------------HEADER-------------------- */ 
+ul{
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+}
+.SUPLEMENTOS{
+    width: 100%;
+margin-left: 20px;
+}
+.INGRESAR{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+ /* --------------------......-------------------- */ 
+
+  /* --------------------MAIN-------------------- */ 
+
+
+  /* --------------------registro-------------------- */  /* --------------------registo-------------------- */  /* --------------------registro-------------------- */
+
+.opciones{
+    border-radius: 10%;
+    height: 200px;
+    margin-top: 100px;
+    margin-right: 800px;
+    margin-left: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form{
+    font-size: 20px;
+    color: rgb(172, 172, 172);
+    flex-direction: column;
+    margin-left: 800px;
+    margin-right: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid rgba(0, 0, 0, 0.8);
+    border-radius: 10%;
+}
+
+.boton{
+    color: rgb(172, 172, 172);
+    font-size: 20px;
+    height: 80px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid rgb(141, 141, 141);
+    border-radius: 10%;
+}
+
+h3{
+    margin-left: 600px;
+    margin-right: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    color: rgb(172, 172, 172);
+}
+
+.TextoBienvenida{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+    align-items: center;
+}
