@@ -239,6 +239,10 @@ function registrarDato() {
     localStorage.setItem('usuario', JSON.stringify(usuario));
     localStorage.setItem('email', JSON.stringify(email));
     localStorage.setItem('contraseña', JSON.stringify(contraseña));
+    Swal.fire({title:'Ha sido registrad@ exitosamente',
+    background: 'rgba(0, 0, 0, 0.8)',
+    confirmButtonColor: '000000',})
+    document.getElementById('registro').style.display = 'none'
 }
 // ...
 var iusuario = "",
@@ -252,8 +256,19 @@ function iregistrarDato() {
     var iausuario = document.getElementById('iNombreUsuario').value,
         iacontraseña = document.getElementById('iContraseñaUsuario').value;
     if (iusuario == usuario && icontraseña == contraseña) {
+        Swal.fire({
+            title:'Bienvenido!',
+            titleText:'Que bueno volver a verte ' + iausuario,
+            icon:'success',
+            background: 'rgba(0, 0, 0, 0.8)',
+            confirmButtonColor: '000000',})
         let contenedor = document.createElement('div');
-        contenedor.innerHTML = `Bienvenido ` + iausuario
+        contenedor.innerHTML = `<div class="tituloBienvenida"><h3 class="h3">⭐​Hola  ${iausuario}</h3>
+        Plan:<br>
+        <br>
+        Tiempo como socio:<br>
+        <br>
+        Productos Comprados:<br></div>`
         document.getElementById('ingreso').style.display = 'none';
         document.getElementById('contenedor').style.display = 'none';
         contenedor.className = 'TextoBienvenida'
