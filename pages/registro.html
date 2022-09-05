@@ -9,22 +9,20 @@
 </head>
 
 <body class="layout">
-    <header class="header">
-        <img height="100%" src="../img/kraken.png" alt="logo">
-        <ul>
-            <li class="INICIO">
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li class="SUPLEMENTOS">
-                <a href="../pages/suplementos.html">Suplementos</a>
-            </li>
-            <li class="INGRESAR">
-                <a href="../pages/registro.html">Ingresar</a>
-            </li>
-        </ul>
-        <nav>
-
-        </nav>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="../img/kraken.png" alt="">
+            <nav>
+                <ul>
+                    <li class="SUPLEMENTOS">
+                        <a href="../pages/suplementos.html">Suplementos</a>
+                    </li>
+                    <li class="INGRESAR">
+                        <a href="../pages/registro.html">Ingresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -56,7 +54,7 @@
             <input type="text" id="EmailUsuario" value=""><br><br>
             <label for="ContraseñaUsuario">Contraseña</label><br>
             <input id="ContraseñaUsuario" type="text" value=""><br><br>
-            <a href="#" class="boton" id="btnRegistrar" onclick="registro();">Registrar</a>
+            <a href="#" class="boton" id="btnRegistrar" onclick=registro();>Registrar</a>
         </form>
 
         <form id="ingreso" class="form">
@@ -64,7 +62,7 @@
             <input id="iNombreUsuario" type="text" value=""><br><br>
             <label for="iContraseñaUsuario">Contraseña</label><br>
             <input id="iContraseñaUsuario" type="text" value=""><br><br>
-            <a href="#" class="boton" id="btnIngresar" onclick="ingreso();">INGRESAR</a>
+            <a href="#" class="boton" id="btnIngresar" onclick=ingreso();>INGRESAR</a>
         </form>
 
     </main>
@@ -72,6 +70,6 @@
 </body>
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../main.js"></script>
+<script src="../js/registro.js"></script>
 
 </html>
