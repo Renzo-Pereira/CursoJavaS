@@ -1,7 +1,7 @@
 body{
     background-image: url("https://cdn.clickwallpapers.net/images/clickwallpapers-Arnold%20Schwarzenegger-img8.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     margin: 0;
 }
 
@@ -325,3 +325,39 @@ p.close-btn{
     color: aliceblue;
 }
 /* ----------Fin de Carrito---------*/
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(172, 172, 172);
+    border-radius: 10%;
+}
+
+#listado-productos{
+    margin-left: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: aliceblue;
+    z-index: 99;
+}
+
+.listado{    
+    margin-left: 420px;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 50%;
+}
+
+.imagenesLista{
+    margin-bottom: 100px;
+    margin-left: 300px;
+    width: 130px;
+    height: 150px;;
+}
+
+.espacioListado{
+    margin-left: 100px;
+}
+

@@ -16,6 +16,7 @@ function loadEventListenrs() {
     carritoItem.addEventListener('click', deleteProduct);
 }
 loadEventListenrs();
+
 function añadirProductos(e) {
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {
@@ -104,9 +105,38 @@ function loadHtml() {
 
         cantidadProductos.innerHTML = numeroProductos;
     });
-    numeroProductos > 3 && Swal.fire({titleText: 'Talvez te interesa un precio por mayor... Contactanos!', background: 'rgba(0, 0, 0, 1)', confirmButtonColor: '000000',})
+    numeroProductos > 3 && Swal.fire({
+        titleText: 'Talvez te interesa un precio por mayor... Contactanos!',
+        background: 'rgba(0, 0, 0, 1)',
+        confirmButtonColor: '000000',
+    })
 }
 
 function clearHtml() {
     carritoItem.innerHTML = '';
+}
+
+const lista = document.querySelector('#listado-productos')
+
+function registro() {
+    fetch('/data.json')
+        .then((res) => res.json())
+        .then((data) => {
+            data.forEach((producto) => {
+                const li = document.createElement('li')
+                li.innerHTML = `
+            <div class="espacioListado">
+                <h4>${producto.nombre}</h4>
+                <p>${producto.precio}</p>
+                <div class="pruebaa">
+                <img class="imagenesLista" src="${producto.img}" alt="">
+                </div>
+                <hr/>
+                </div>
+            `
+                lista.append(li)
+                li.className = 'listado'
+                li.id =  'listado'
+            })
+        })
 }
