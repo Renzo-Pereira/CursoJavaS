@@ -36,7 +36,9 @@
 
         <style>
             #contenedor {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             #registro {
@@ -48,21 +50,25 @@
             }
         </style>
         <form id="registro" class="form">
+            <div class="poscicion">
             <label for="NombreUsuario">Usuario</label><br>
             <input id="NombreUsuario" type="text" value=""><br><br>
             <label for="EmailUsuario">Email</label><br>
             <input type="text" id="EmailUsuario" value=""><br><br>
             <label for="ContraseñaUsuario">Contraseña</label><br>
             <input id="ContraseñaUsuario" type="text" value=""><br><br>
-            <a href="#" class="boton" id="btnRegistrar" onclick=registro();>Registrar</a>
+            <a href="#" id="btnRegistrar" onclick=registro();>Registrar</a>
+        </div>
         </form>
 
         <form id="ingreso" class="form">
+            <div class="poscicion">
             <label for="iNombreUsuario">Usuario</label><br>
             <input id="iNombreUsuario" type="text" value=""><br><br>
             <label for="iContraseñaUsuario">Contraseña</label><br>
             <input id="iContraseñaUsuario" type="text" value=""><br><br>
-            <a href="#" class="boton" id="btnIngresar" onclick=ingreso();>INGRESAR</a>
+            <a href="#" id="btnIngresar" onclick=ingreso();>INGRESAR</a>
+        </div>
         </form>
 
     </main>
