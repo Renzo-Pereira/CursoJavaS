@@ -360,6 +360,17 @@
         width: 130px;
         height: 150px;;
     }
+
+    h1{
+        text-align: center;
+        color: rgb(172, 172, 172);
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 30px;
+        margin-top: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -735,4 +746,15 @@ p.close-btn{
 .espacioListado{
     margin-left: 100px;
 }
+
+h1{
+    color: rgb(172, 172, 172);
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 120px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+}
+
